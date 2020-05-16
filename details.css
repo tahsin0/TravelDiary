@@ -1,0 +1,26 @@
+.item1 { grid-area: picture; }
+.item2 { grid-area: title; }
+.item3 { grid-area: description; }
+.item4 { grid-area: rating; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'picture picture picture description description description'
+    'title title title rating rating rating';
+  grid-gap: 10px;
+  background-color: #FAFAFA;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(295, 295, 255, 6.8);
+  /* text-align: center; */
+  padding: 20px 0;
+  
+}
+
+.checked {
+    color: orange;
+  }
